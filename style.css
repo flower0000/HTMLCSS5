@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  /*＜質問：text-alignを適用する場合，h1は要素はブロック要素では？＞*/
+}
+
+/*ここまで理解*/
+
+.nav-list {
+  text-align: center;
+  padding: 15px 0;
+  /* 値2つは、上下 左右 にpaddingを作成
+  なので上に15pxのpaddingを作成*/
+  margin: 0 auto;
+  border-bottom: 1px solid #848282;
+  /* 太さ（5px）枠線の種類（solid（実線））、色（yellow（黄色））
+  下側に1pxの下線(実線)をborderを引く。色はグレー
+  ＜質問：border-bottom-widthでは反映されなかった。なぜ？＞
+  */
+  border-top: 1px solid #848282; /*上側に1pxのグレーの実践を引く*/
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  /*liはインライン要素のため親要素の.nav-listにtext-align: center;を使用*/
+  margin: 0 20px;
+}
+
+.main {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /*
+  質問：margin:  px autoとは？;
+  */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: #e6ffe9;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: #cbffd3;
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: #aeffbd;
+}
+
+.box4 {
+  width: 200px;
+  height: 200px;
+  background-color: #93ffab;
+}
+
+.box5 {
+  width: 200px;
+  height: 200px;
+  background-color: #f3ffd8;
+}
+
+.box6 {
+  width: 200px;
+  height: 200px;
+  background-color: #edffbe;
+}
+
+.box7 {
+  width: 200px;
+  height: 200px;
+  background-color: #e9ffa5;
+}
+
+.box8 {
+  width: 200px;
+  height: 200px;
+  background-color: #e4ff8d;
+}
+
+.box9 {
+  width: 200px;
+  height: 200px;
+  background-color: #d9e5ff;
+}
+
+.box10 {
+  width: 200px;
+  height: 200px;
+  background-color: #bad3ff;
+}
+
+.box11 {
+  width: 200px;
+  height: 200px;
+  background-color: #a4c6ff;
+}
+
+.box12 {
+  width: 200px;
+  height: 200px;
+  background-color: #8eb8ff;
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  /*質問.footerは<p>タグなのでブロック要素では？*/
+  line-height: 120px;
+  /*上下の中央ぞろえ：pxは親要素と同じ数値を記述 */
+  background-color: #848282;
+}
+
+.footer-text {
+  color: #fff;
+}
